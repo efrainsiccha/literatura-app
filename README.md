@@ -51,3 +51,57 @@ Se muestran en orden de registro.
 Ejemplo de uso:
 
 ![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/a1cd2f7b-350b-4bde-80fc-c7ba553df655)
+
+### Ver listado de autores registrados
+
+Esta función actua igual que la de listar libros, se realiza una consulta a la db para traer a todos los autores e imprimirlos.
+Adicionalmente muestra todos los libros relacionados a cada autor.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/3919af71-a296-4118-a830-4e99ea65518c)
+
+### Ver listado de autores vivos en un determinado año
+
+Se realiza una consulta a los autores de la base de datos filtrandolos por dos condiciones: 1) que su año de nacimiento sea menor o igual al parametro dado. 2) que su año de fallecimiento sea mayor o igual al parametro dado.
+Así, se garantiza que el listado resultante de autores sean aquellos que estuvieron vivos al rededor del año dado.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/5a98a3c7-b9fc-4e11-afc8-0e9fd1768559)
+
+### Listar libros por idioma
+
+En primer lugar, se muestra un pequeño menú con los idiomas disponibles. Después de ingresar la abreviatura del idioma deseado, se obtendrá de la base de datos el listado de libros que tengan ese idioma en su columna "language".
+Ejemplo:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/a477a37f-480c-495a-b2ea-b7e301e0e677)
+
+### Mostrar estadisticas de los libros registrados
+
+En esta opcion se toma todo el listado de libros registrados en la base de datos, se toma la propiedad de "downloads" de cada uno para poder generar las estadisticas pertinentes a partir de la clase DoubleSummaryStatistics de Java.
+
+Finalmente, se presenta un resumen de las estadisticas más importantes en cuestion de descargas de todos los libros registrados, como la media, el dato maximo, etc.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/55e13e00-d4d0-4bc1-9d86-fb3d7eee2f6a)
+
+### Listar libros más descargados de la API gutendex
+
+Aquí traemos el listado general de libros de la API gutendex y filtramos los 10 más descargados. Por defecto la API misma trae en su primera página los trae por los más descargados en orden descendente, asi que solo traemos los primeros 10.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/a7291c6f-b566-4962-a880-3beee01dcb5d)
+
+### Listar libros más descargados de la base de datos
+
+Se hace una consulta a la base de datos para que traiga de forma descendente 10 libros segun la cantidad de descargas, asi, obtenemos los 10 más descargados que hay registrados.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/7d75d012-3b0b-459c-93f0-cce87425da7d)
+
+### Buscar autor por nombre
+
+Aquí damos uso de las JPA Derived queries para consultar un autor por nombre en la db a partir de si el nombre esta contenido, ignorando el case sensitive.
+Esta funcionalidad de usó en la primera opcion para poder buscar autores registrados y decidir si crearlos o no.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/472a1883-a3ce-4c64-b273-42f40a6c8ceb)
