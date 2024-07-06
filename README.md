@@ -30,3 +30,17 @@ Te dejo aquí los atajos para que puedas verlas de forma más rápida:
 - [7. Listar libros más descargados de la API gutendex](#listar-libros-más-descargados-de-la-API-gutendex)
 - [8. Listar libros más descargados de nuestro registro](#listar-libros-más-descargados-de-la-base-de-datos)
 - [9. Buscar autor por nombre](#buscar-autor-por-nombre)
+
+A continuación exploramos cada opción del menú:
+
+### Buscar libro por titulo
+
+Primero se realiza una consulta a la API Gutendex para buscar su libro. La app de fondo valida si el libro ya se encuentra registrado en la db, en tal caso solo mostrará el libro que ya esta registrado para evitar duplicados. 
+De misma forma, se toma la lista de autores y se realiza una busqueda en la db, asi, si el autor ya existe lo traemos para hacer la relación con el nuevo libro (si no esta registrado el libro) o se crea el nuevo autor en caso de no encontrar ninguno en la db.
+Una vez completadas todas las acciones, imprime en consola la nueva instancia creada.
+
+Es importante notar que no es necesario anotar el titulo completo del libro.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/9abdc3c3-6a56-41c7-9bf5-8986686c4d77)
+
