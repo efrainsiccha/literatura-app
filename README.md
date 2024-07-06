@@ -42,5 +42,5 @@ Una vez completadas todas las acciones, imprime en consola la nueva instancia cr
 Es importante notar que no es necesario anotar el titulo completo del libro.
 Ejemplo de uso:
 
-![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/9abdc3c3-6a56-41c7-9bf5-8986686c4d77)
+![Captura de pantalla 2024-07-06 150626](https://github.com/efrainsiccha/literatura-app/assets/163354946/1e963f9a-a96d-4e25-a28e-6127802abfb0)
 
