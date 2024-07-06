@@ -44,3 +44,10 @@ Ejemplo de uso:
 
 ![Captura de pantalla 2024-07-06 150626](https://github.com/efrainsiccha/literatura-app/assets/163354946/1e963f9a-a96d-4e25-a28e-6127802abfb0)
 
+### Ver listado de libros registrados
+
+Se realiza una consulta a la base de datos trayendo todos los libros registrados, posterior a ello se imprimen en consola todos. Finalmente, muestra cuantos libros hay registrados en total.
+Se muestran en orden de registro.
+Ejemplo de uso:
+
+![image](https://github.com/efrainsiccha/literatura-app/assets/163354946/a1cd2f7b-350b-4bde-80fc-c7ba553df655)
